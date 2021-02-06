@@ -15,6 +15,7 @@ export const ContainerTotal = styled.div`
 
   .section2 {
     background: url(${backgroundLogin}) no-repeat center;
+    filter: brightness(57%);
     background-size: cover;
     overflow: hidden;
     height: 40%;
@@ -53,7 +54,7 @@ export const Form = styled.div`
 
     h1 {
       color:  #30327C;
-      font-size: 48px;
+      font-size: 52px;
       font-family: 'Lily Script One', cursive;
       padding: 32px;
     }
