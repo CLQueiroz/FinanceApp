@@ -37,7 +37,22 @@ export const Form = styled.div`
     display: flex;
     flex-direction: column;
     padding: 22px;
-    
+
+    overflow: hidden;
+      animation-name: move;
+      animation-duration: 500ms;
+
+      @keyframes move{
+      from{
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      to{
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
     button{
       background-color: #2f6094;
       border: 0;
@@ -68,8 +83,9 @@ export const Form = styled.div`
       label {
         display: flex;
         color: #9a9999;
+        font-size: 18px;
         font-weight: bold;
-        margin-bottom: 20px;
+        margin-bottom: 20px;        
       }
 
       input {
@@ -77,9 +93,6 @@ export const Form = styled.div`
         font-size: larger;
         border: 0;
         border-bottom: 2px solid #9a9999;
-
-      }
-
-      
+      }      
     }
 `
