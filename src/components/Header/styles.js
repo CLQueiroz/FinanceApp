@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { shade } from 'polished';
 
+
 export const Background = styled.div`
   background-color: #282a36;
   height: 100vh;
@@ -19,45 +20,6 @@ export const Container = styled.div`
   display: flex;
 `
 
-export const ContainerDefault = styled.div`
-  height: 100%;
-  padding: 20px;
-  width: 100%;
-
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1%;
-    width: 100%;
-    height: 100%;
-
-    .item1 {
-      grid-column: 1 / span 2;
-      grid-row: 1;
-    }
-
-    .item {
-      background-color: #232731;
-      width: 100%;
-      height: 100%;
-      padding: 20px;
-      border-radius: 20px;
-      
-      .header {
-        display: flex;
-        justify-content: flex-end;
-
-        button{
-            background: none;
-            border: none;
-          svg {
-            color: #FFF;
-          }
-        }
-      }
-    }
-  }
-`
 export const ContainerHeader = styled.div`
   height: 100%;
   width: 300px;

@@ -1,26 +1,31 @@
-import React from 'react';
-import { MdPerson, MdLock } from 'react-icons/md';
+import React from "react";
+import { MdPerson, MdLock } from "react-icons/md";
+import { Link } from "react-router-dom";
 
-import { Container, Form, ContainerTotal } from './styles';
+import { Container, Form, ContainerTotal } from "./styles";
 
 function Login() {
-  return(
+  return (
     <ContainerTotal>
       <div className="section1">
-      <Container>
+        <Container>
           <Form>
             <h1>FinanceApp</h1>
             <div>
-              <label htmlFor=""><MdPerson /> Login</label>
-              <input type="email"/>
+              <label htmlFor="">
+                <MdPerson /> Login
+              </label>
+              <input type="email" />
             </div>
             <div>
-              <label htmlFor=""><MdLock /> Senha</label>
-              <input type="password"/>
+              <label htmlFor="">
+                <MdLock /> Senha
+              </label>
+              <input type="password" />
             </div>
-            <button>LOGIN</button>
+            <Link to="/dashboard">LOGIN</Link>
           </Form>
-      </Container>
+        </Container>
       </div>
       <div className="section2"></div>
     </ContainerTotal>

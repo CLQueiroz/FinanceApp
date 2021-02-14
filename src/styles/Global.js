@@ -8,11 +8,11 @@ export default createGlobalStyle`
   }
 
   body{
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif !important;
     -webkit-font-smoothing: antialiased !important;
   }
    body, input, button {
-    font-family: 'Roboto Slab', serif;
+    /* font-family: 'Roboto', serif; */
     font-size: 16px;
     outline:0;
   }

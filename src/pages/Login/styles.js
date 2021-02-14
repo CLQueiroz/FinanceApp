@@ -53,14 +53,16 @@ export const Form = styled.div`
       }
     }
 
-    button{
+    a{
       background-color: #2f6094;
       border: 0;
       border-radius: 15px;
       font-size: 22px;
       padding: 10px;
-      color: #FFF;
+      color: #FFF !important;
       outline: 0;
+      text-decoration: none;
+      text-align: center;
 
       &:hover {
         background-color: ${shade(0.2, '#2f6094')}
@@ -82,10 +84,15 @@ export const Form = styled.div`
 
       label {
         display: flex;
+        align-items: center;
         color: #9a9999;
         font-size: 18px;
         font-weight: bold;
-        margin-bottom: 20px;        
+        margin-bottom: 20px;
+
+        svg {
+          font-size: 20px;
+        }    
       }
 
       input {
